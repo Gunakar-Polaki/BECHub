@@ -14,4 +14,4 @@ function changeBackground() {
     document.querySelector('.home-bg').style.backgroundImage = `url(${images[currentIndex]})`;
 }
 
-setInterval(changeBackground, 3000);
+setInterval(changeBackground, 5000);
