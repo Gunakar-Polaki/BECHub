@@ -8,7 +8,7 @@ if st.button('Redirect to BEC Hub'):
     components.html(
         """
         <script type="text/javascript">
-            window.location.href = 'https://gunakar-polaki.github.io/BECHub/index.html';
+            window.location = 'https://gunakar-polaki.github.io/BECHub/index.html';
         </script>
         """,
         height=0,
