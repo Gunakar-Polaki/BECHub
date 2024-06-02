@@ -1,10 +1,17 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
-st.title("BEC Hub ")
+st.title("BEC Hub")
 
-if st.button('Redirect to BEC Hub '):
-    js = "window.open('https://gunakar-polaki.github.io/BECHub/index.html')"
-    html = f'<script>{js}</script>'
-    st.markdown(html, unsafe_allow_html=True)
+if st.button('Redirect to BEC Hub'):
+    # Use streamlit's components to run the JS script
+    components.html(
+        """
+        <script type="text/javascript">
+            window.open('https://gunakar-polaki.github.io/BECHub/index.html');
+        </script>
+        """,
+        height=0,
+    )
 
 st.write("Click the button above to be redirected to the BEC Hub Home page.")
