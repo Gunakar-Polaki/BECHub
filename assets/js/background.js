@@ -7,7 +7,7 @@ const images = [
     'assets/images/bec6.jpg',
 ];
 
-let currentIndex = 0;
+let currentIndex = -1;
 
 function changeBackground() {
     currentIndex = (currentIndex + 1) % images.length;
